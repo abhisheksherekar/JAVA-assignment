@@ -86,5 +86,86 @@ public static void main(String args[]) {
 
 
 
-Q4.
+Q10.
 ===================================================================================================
+
+import java.util.Scanner;
+public class Fahrenheit_Celsius 
+{
+    public static void main(String[] args) 
+    {
+        double celsius, fahrenheit;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter temperature in Fahrenheit:");
+        fahrenheit = sc.nextDouble();
+        celsius = (fahrenheit-32)*5/9;
+        
+        System.out.println("Temperature in Celsius:"+celsius);        
+    }
+}
+
+Q11.
+===================================================================================================
+import java.util.Scanner;
+public class GrossSalary
+{ 
+          
+    public static void main(String args[])
+   {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Basic Salary");
+	double HRA;
+	double DA;
+	double basic = sc.nextDouble();
+        if (basic < 10000)
+	{
+	   HRA = 0.1*basic;
+	   DA = 0.9*basic;
+         }
+	else {
+
+	HRA = 2000;
+	 DA = 0.98*basic;
+      }
+
+double GS = basic + HRA + DA;
+
+System.out.println("GROSS SALARY "+GS);
+
+}
+
+}
+
+Q13.
+===================================================================================================
+import java.util.Scanner;
+public class SwapNumbers
+{ 
+     
+      
+    public static void main(String args[])
+{
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the 1 Number");
+        int x = sc.nextInt();
+        System.out.println("Enter the 2 Number");
+        int y = sc.nextInt();
+
+        System.out.println("Before swap:");
+        System.out.println("x value: "+x);
+        System.out.println("y value: "+y);
+        x = x+y;
+        y=x-y;
+        x=x-y;
+        System.out.println("After swap:");
+        System.out.println("x value: "+x);
+        System.out.println("y value: "+y);
+    }
+}
+
+
+
+
+
+
